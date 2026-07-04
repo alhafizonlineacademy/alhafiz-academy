@@ -13,7 +13,7 @@ body {
     scroll-behavior: smooth;
 }
 
-/* TOP BAR */
+/* HEADER */
 header {
     background: #0d6efd;
     color: white;
@@ -23,7 +23,6 @@ header {
 
 .logo {
     width: 90px;
-    border-radius: 10px;
 }
 
 /* MENU */
@@ -37,10 +36,9 @@ nav {
 
 nav a {
     color: white;
-    margin: 10px;
+    margin: 5px;
+    padding: 8px 10px;
     text-decoration: none;
-    font-size: 16px;
-    padding: 8px 12px;
     border-radius: 5px;
 }
 
@@ -48,107 +46,120 @@ nav a:hover {
     background: #25D366;
 }
 
-/* CONTENT */
-.container {
-    padding: 20px;
+/* HOME */
+.hero {
+    background: white;
+    padding: 30px;
+    text-align: center;
 }
 
+/* SECTIONS */
 section {
     background: white;
-    margin: 15px 0;
+    margin: 15px;
     padding: 15px;
     border-radius: 10px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* DETAIL BOX */
+.details {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 8px;
 }
 
 /* BUTTON */
 button {
     background: #25D366;
     color: white;
-    padding: 10px 15px;
+    padding: 8px 12px;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
 }
 </style>
+
+<script>
+function toggle(id){
+    var x = document.getElementById(id);
+    if(x.style.display === "block"){
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+</script>
 
 </head>
 
 <body>
 
-<!-- HEADER -->
 <header>
     <img src="logo.png" class="logo">
     <h1>الحافظ آن لائن اکیڈمی</h1>
     <p>قرآنِ مجید کی بہترین آن لائن تعلیم</p>
 </header>
 
-<!-- MENU -->
 <nav>
     <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#courses">Courses</a>
-    <a href="#rules">Rules</a>
+    <a href="#" onclick="toggle('academy')">Academy</a>
+    <a href="#" onclick="toggle('teacher')">Teacher</a>
+    <a href="#" onclick="toggle('courses')">Courses</a>
     <a href="#contact">Contact</a>
 </nav>
 
-<div class="container">
+<div class="hero" id="home">
+    <h2>خوش آمدید</h2>
+    <p>قرآنِ مجید کی ناظرہ، حفظ، تجوید اور تفسیر کی بہترین آن لائن تعلیم</p>
+</div>
 
-<!-- HOME -->
-<section id="home">
-<h2>خوش آمدید</h2>
+<!-- ACADEMY -->
+<section>
+<h2 onclick="toggle('academy')" style="cursor:pointer;">🏢 اکیڈمی کا تعارف (کلک کریں)</h2>
+<div id="academy" class="details">
 <p>
-ہماری اکیڈمی میں آپ کو قرآنِ مجید کی بہترین آن لائن تعلیم دی جاتی ہے۔
+ہماری اکیڈمی کا مقصد قرآنِ مجید کی صحیح اور آسان تعلیم دینا ہے۔
+یہ ادارہ بچوں اور بڑوں دونوں کے لیے آن لائن تعلیم فراہم کرتا ہے۔
 </p>
+</div>
 </section>
 
-<!-- ABOUT -->
-<section id="about">
-<h2>اکیڈمی کا تعارف</h2>
+<!-- TEACHER -->
+<section>
+<h2 onclick="toggle('teacher')" style="cursor:pointer;">👨‍🏫 استاد کا تعارف (کلک کریں)</h2>
+<div id="teacher" class="details">
 <p>
-الحمدللہ! ہمارا مقصد قرآنِ مجید کو آسان اور صحیح تجوید کے ساتھ سکھانا ہے۔
+میں ایک دینی طالب علم اور قرآن کا استاد ہوں۔
+میں ناظرہ، تجوید، حفظ اور اسلامی بنیادی تعلیمات پڑھاتا ہوں۔
+میرا طریقہ آسان اور سمجھانے والا ہے۔
 </p>
-
-<h3>استاد کا تعارف</h3>
-<p>
-میں ایک دینی طالب علم ہوں اور قرآن کی تعلیم آن لائن دیتا ہوں۔
-</p>
+</div>
 </section>
 
 <!-- COURSES -->
-<section id="courses">
-<h2>ہمارے کورسز</h2>
+<section>
+<h2 onclick="toggle('courses')" style="cursor:pointer;">📚 کورسز (کلک کریں)</h2>
+<div id="courses" class="details">
 <ul>
 <li>ناظرہ قرآن</li>
 <li>حفظ القرآن</li>
 <li>تجوید</li>
+<li>تفسیر قرآن</li>
 <li>دعائیں اور نماز</li>
 </ul>
-</section>
-
-<!-- RULES -->
-<section id="rules">
-<h2>داخلہ و تعلیمی شرائط</h2>
-<ul>
-<li>وقت کی پابندی ضروری ہے</li>
-<li>ادب و احترام لازمی ہے</li>
-<li>آن لائن کلاس کے لیے موبائل ضروری ہے</li>
-<li>ادارہ قوانین میں تبدیلی کر سکتا ہے</li>
-</ul>
+</div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
-<h2>رابطہ کریں</h2>
-
-<p><b>WhatsApp:</b> 03XXXXXXXXX</p>
+<h2>📞 رابطہ کریں</h2>
+<p>WhatsApp: 03080503475</p>
 
 <a href="https://wa.me/923XXXXXXXXX">
 <button>WhatsApp پر رابطہ کریں</button>
 </a>
 </section>
-
-</div>
 
 </body>
 </html>
