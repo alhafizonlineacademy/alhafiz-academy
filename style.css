@@ -146,3 +146,57 @@ footer {
     color:#333;
     text-align:justify;
 }
+/* ===== ADMISSION REQUIREMENTS ===== */
+
+.admission{
+    background:#f8f9fa;
+    padding:80px 8%;
+}
+
+.admission .container{
+    max-width:1100px;
+    margin:auto;
+}
+
+.admission h2{
+    text-align:center;
+    font-size:36px;
+    color:#0B5E3C;
+    margin-bottom:10px;
+}
+
+.admission h3{
+    text-align:center;
+    font-size:28px;
+    color:#444;
+    margin-bottom:35px;
+}
+
+.admission p{
+    font-size:18px;
+    line-height:2;
+    color:#333;
+    text-align:justify;
+    margin-bottom:25px;
+}
+
+.admission ul{
+    list-style:none;
+    padding:0;
+}
+
+.admission ul li{
+    background:#ffffff;
+    margin-bottom:15px;
+    padding:18px 20px;
+    border-left:5px solid #0B5E3C;
+    border-radius:8px;
+    font-size:18px;
+    line-height:1.8;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+
+.admission ul li:hover{
+    background:#eef8f2;
+    transition:0.3s;
+}
