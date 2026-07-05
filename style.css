@@ -200,3 +200,57 @@ footer {
     background:#eef8f2;
     transition:0.3s;
 }
+/* ===== STUDENT CODE OF CONDUCT ===== */
+
+.student-etiquette{
+    background:#ffffff;
+    padding:80px 8%;
+}
+
+.student-etiquette .container{
+    max-width:1100px;
+    margin:auto;
+}
+
+.student-etiquette h2{
+    text-align:center;
+    font-size:36px;
+    color:#0B5E3C;
+    margin-bottom:10px;
+}
+
+.student-etiquette h3{
+    text-align:center;
+    font-size:28px;
+    color:#444;
+    margin-bottom:35px;
+}
+
+.student-etiquette p{
+    font-size:18px;
+    line-height:2;
+    color:#333;
+    text-align:justify;
+    margin-bottom:25px;
+}
+
+.student-etiquette ul{
+    list-style:none;
+    padding:0;
+}
+
+.student-etiquette ul li{
+    background:#f8f9fa;
+    margin-bottom:15px;
+    padding:18px 20px;
+    border-left:5px solid #0B5E3C;
+    border-radius:8px;
+    font-size:18px;
+    line-height:1.8;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+
+.student-etiquette ul li:hover{
+    background:#eef8f2;
+    transition:0.3s;
+}
