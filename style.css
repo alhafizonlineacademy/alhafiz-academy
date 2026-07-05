@@ -254,3 +254,67 @@ footer {
     background:#eef8f2;
     transition:0.3s;
 }
+/* Admission Section */
+#admission {
+    background: #f8f9fa;
+    padding: 60px 20px;
+    border-radius: 12px;
+    margin: 40px auto;
+}
+
+#admission h2 {
+    text-align: center;
+    color: #0b5d3b;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#admission h3 {
+    color: #0b5d3b;
+    margin-top: 25px;
+}
+
+#admission p,
+#admission li {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #444;
+}
+
+#admission ul {
+    padding-left: 20px;
+}
+
+#admission .card {
+    background: #ffffff;
+    padding: 20px;
+    margin: 15px 0;
+    border-left: 5px solid #0b5d3b;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+#admission a {
+    color: #0b5d3b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#admission a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    #admission h2 {
+        font-size: 26px;
+    }
+
+    #admission p,
+    #admission li {
+        font-size: 16px;
+    }
+
+    #admission .card {
+        padding: 15px;
+    }
+}
