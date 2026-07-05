@@ -640,3 +640,11 @@ document.addEventListener("DOMContentLoaded", function () {
   </div>
 
 </section>
+<script>
+document.querySelectorAll(".box").forEach(box=>{
+  box.onclick=function(){
+    let c=this.querySelector(".content");
+    c.style.display = (c.style.display==="block")?"none":"block";
+  }
+});
+</script>
