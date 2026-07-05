@@ -382,3 +382,24 @@ footer {
   margin-top: 10px;
   font-weight: bold;
 }
+.academy-menu .box {
+  background: #fff;
+  padding: 15px;
+  margin: 10px 0;
+  border-left: 5px solid #0b5d3b;
+  cursor: pointer;
+}
+
+.academy-menu .content {
+  display: none;
+  margin-top: 10px;
+}
+
+.whatsapp-btn {
+  display: inline-block;
+  background: #25D366;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+}
