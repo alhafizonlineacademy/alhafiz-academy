@@ -580,3 +580,20 @@ for (let i = 0; i < acc.length; i++) {
     </a>
   </div>
 </section>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var items = document.getElementsByClassName("box");
+
+  for (let i = 0; i < items.length; i++) {
+    items[i].addEventListener("click", function () {
+      var p = this.querySelector("p");
+
+      if (p.style.display === "block") {
+        p.style.display = "none";
+      } else {
+        p.style.display = "block";
+      }
+    });
+  }
+});
+</script>
